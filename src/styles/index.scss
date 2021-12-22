@@ -1,0 +1,109 @@
+@import "./variables.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html,
+body {
+  overflow-x: hidden;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: $Poppins;
+  color: $dark;
+  background: linear-gradient(135deg, #2f86a6, #3e065f);
+}
+
+#root {
+  height: 100%;
+}
+
+.jumbotron-fluid {
+  background-color: #f0e9d2;
+}
+
+.selected {
+  background-color: rgba($primary, 0.1);
+}
+
+.image {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+}
+
+.profile-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+#input[type="file"] {
+  display: none;
+}
+
+.image-container {
+  position: relative;
+}
+
+.wrapped {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+.btn-size {
+  font-size: 0.6rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+  padding: 0.2rem 0.3rem;
+}
+//-------FORM SELECT -------//
+.form-select {
+  height: 2.5rem;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  border-bottom: 3px solid #cccccc;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.form-select:focus {
+  border-bottom: 3px solid #3e065f;
+}
+//-------END -------//
+
+.title {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.container-upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-arrow-alt-circle-up {
+  margin-right: 4px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.text-td {
+  font-size: 14px;
+}
+
+.centered {
+  margin: 1rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
